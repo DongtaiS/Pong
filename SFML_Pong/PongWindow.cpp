@@ -11,7 +11,7 @@ PongWindow::PongWindow()
     middlePaddle = true;
     paddleL = Paddle(20, 200, 30, screenHeight / 2, screenHeight / 150);
     paddleR = Paddle(20, 200, screenWidth-30, screenHeight / 2, screenHeight / 150);
-    window.create(sf::VideoMode(screenWidth, screenHeight), "PONG");
+    window.create(sf::VideoMode(screenWidth, screenHeight-1), "PONG", sf::Style::None);
     font.loadFromFile("Media/Avant_Garde.ttf");
     winMusicB.loadFromFile("Media/WinMusic.wav");
     loseMusicB.loadFromFile("Media/LoseMusic.wav");
